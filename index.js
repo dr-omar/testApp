@@ -200,5 +200,5 @@ app.put('/api/doctor/updateAppointmentStatus/:_id', async (req, res) => {
 });
 
 
-const port=5600
+const port= 8080 || 5600 || process.env.PORT;
 app.listen(port, ()=>console.log('server is running in port:', port))
