@@ -7,11 +7,11 @@ const app = express()
 
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
-/*
+
 app.get('/', async(req, res) => {
     res.status(500).send('Hellooo User');
 });
-*/
+
 // register User
 app.post('/api/user/registerUser', async(req, res) => {
     const {name, pass} = req.body;
