@@ -99,7 +99,7 @@ app.get('/api/user/bookAppointment', async (req, res) => {
         }
         const newAppointment = new appointment({
             pname,
-            pname, 
+            dname, 
             age,
             disease,
             phone, 
