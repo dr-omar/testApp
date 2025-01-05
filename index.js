@@ -8,7 +8,7 @@ const app = express()
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
-app.get('/', async(req, res) => {
+app.get('/test', async(req, res) => {
     res.status(500).send('Hellooo User');
 });
 
